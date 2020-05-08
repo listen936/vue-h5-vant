@@ -1,0 +1,42 @@
+{
+  "name": "daydayup",
+  "version": "1.0.0",
+  "description": "good good study day day up",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listen936/daydayup.git"
+  },
+  "author": "lswang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/listen936/daydayup/issues"
+  },
+  "homepage": "https://github.com/listen936/daydayup#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "csv-loader": "^3.0.3",
+    "cz-conventional-changelog": "^3.2.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
