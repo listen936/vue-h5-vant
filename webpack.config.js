@@ -2,10 +2,11 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const {CleanWebpackPlugin} = require('clean-webpack-plugin') // 注意：此写法与webpack中文官网上的不一致
+const webpack = require('webpack')
 
 module.exports= {
     entry:{
-        print:'./src/print.js',
+        // print:'./src/print.js',
         app:'./src/index.js'
     },
     output:{
@@ -14,6 +15,10 @@ module.exports= {
     },
     module:{
         rules:[
+            {
+                include: path.resolve("node_modules", "lodash"),
+                sideEffects: false
+              },
             {
                 test:/\.css$/,
                 use:[
@@ -36,6 +41,10 @@ module.exports= {
             {
                 test:/\.xml$/,
                 use:['xml-loader']
+            },
+            {
+                test:/\.vue$/,
+                use:['vue-loader']
             }
         ]
     },
@@ -44,10 +53,17 @@ module.exports= {
         new HtmlWebpackPlugin({
             title:'good good study,day day up'
         }),
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.optimize.CommonsChunkPlugin({
+            name:'common'  //公共bundle的名字
+        })
         
     ],
     devtool:'inline-source-map',
     devServer:{
-        contentBase:'./dist'
-    }
+        contentBase:'./dist',
+        hot:true
+    },
+    mode:'production'
 }
