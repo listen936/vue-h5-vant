@@ -3,8 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-// import { Button } from 'vant'
-// Vue.use(Button)
+import './assets/css/reset.css'
+
+import './utils/plugins'
 
 Vue.config.productionTip = false
 

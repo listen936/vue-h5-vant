@@ -1,10 +1,10 @@
-## 仿照[掘金文章](https://juejin.im/post/5eb766296fb9a0432f0ff8c7)打造一个vue_h5模版
+### 仿照 [掘金文章](https://juejin.im/post/5eb766296fb9a0432f0ff8c7)打造一个vue_h5模版
 
 ### TODO
 
 - [x] vue-cli4脚手架
 - [x]  vant按需引入
-- [ ]  移动端rem适配
+- [x]  移动端rem适配
 - [ ]  axios拦截封装
 - [ ]  util工具类函数封装
 - [ ]  vue-router配置
@@ -18,4 +18,3 @@
 - [ ]  CDN资源优化
 - [ ]  gzip打包优化
 - [ ]  首页添加骨架屏
-    
