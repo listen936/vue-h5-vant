@@ -14,21 +14,21 @@ http.interceptors.request.use(
     // 设置header
       config.headers['X-Token'] = token
     }
-    // console.log('config', config)
     // 根据是否传loading参数来选择是否显示加载提示
     if (config.loading) {
-      // console.log('vm', vm)
+      vm.$loading.hide()
       vm.$loading.show()
-      // Notify({ type: 'danger', message: '通知内容' })
     }
     return config
   }, (err) => {
+    vm.$loading.hide()
     return Promise.reject(err)
   })
 
 // 响应拦截
 http.interceptors.response.use(
   (response) => {
+    vm.$loading.hide()
     const res = response.data
     //  判断自定义的code
     // if (res.errCode !== 0) {
@@ -39,6 +39,7 @@ http.interceptors.response.use(
     return res
   },
   (err) => {
+    vm.$loading.hide()
     return Promise.reject(err)
   }
 )
