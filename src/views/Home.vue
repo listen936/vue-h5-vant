@@ -18,7 +18,8 @@ export default {
   },
   data () {
     return {
-      weather: {}
+      weather: {},
+      topLoading: true
     }
   },
   mounted () {

@@ -1,5 +1,6 @@
 import axios from 'axios'
-import { Notify } from 'vant'
+// import { Notify } from 'vant'
+import vm from '../main'
 
 const http = axios.create({
   baseURL: process.env.VUE_APP_BASE_URL,
@@ -16,8 +17,9 @@ http.interceptors.request.use(
     // console.log('config', config)
     // 根据是否传loading参数来选择是否显示加载提示
     if (config.loading) {
-      console.log('vm', this)
-      Notify({ type: 'danger', message: '通知内容' })
+      // console.log('vm', vm)
+      vm.$loading.show()
+      // Notify({ type: 'danger', message: '通知内容' })
     }
     return config
   }, (err) => {
