@@ -10,6 +10,7 @@
 </template>
 <script>
 export default {
+  name: 'my-loading',
   data () {
     return {
       loading: true,

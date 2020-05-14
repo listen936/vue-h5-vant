@@ -15,7 +15,7 @@ const Loading = {
   },
   hide () {
     if (instance) {
-      this.instance.vm.loading = false
+      instance.vm.loading = false
     }
   }
 }
