@@ -172,7 +172,7 @@ a:target {
 * {
     -webkit-tap-highlight-color: transparent;
     -webkit-appearance: none;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
 }
 
 input.checkbox {

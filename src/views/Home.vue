@@ -10,11 +10,27 @@
 <script>
 // @ is an alias to /src
 import { Button } from 'vant'
-
+import { getWeather } from '../api/index'
 export default {
   name: 'Home',
   components: {
     [Button.name]: Button
+  },
+  data () {
+    return {
+      weather: {}
+    }
+  },
+  mounted () {
+    this.getData()
+  },
+  methods: {
+    getData () {
+      getWeather().then(res => {
+        console.log('res', res)
+        this.weather = res
+      })
+    }
   }
 }
 </script>
