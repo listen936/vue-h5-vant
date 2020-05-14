@@ -3,9 +3,10 @@
 ### TODO
 
 - [x] vue-cli4脚手架
-- [x]  vant按需引入
-- [x]  移动端rem适配
-- [ ]  axios拦截封装
+- [x] vant按需引入
+- [x] 移动端rem适配
+- [x]  axios拦截封装
+- [ ]  请求时的加载动画
 - [ ]  util工具类函数封装
 - [ ]  vue-router配置
 - [ ]  登录权限校验
@@ -18,3 +19,7 @@
 - [ ]  CDN资源优化
 - [ ]  gzip打包优化
 - [ ]  首页添加骨架屏
+
+### tips
+
+1、postcss-px2rem需要安装到生成环境，不然vant无法适配

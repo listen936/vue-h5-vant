@@ -6,7 +6,8 @@ import store from './store'
 import './assets/css/reset.css'
 
 import './utils/plugins'
-
+import { Loading } from 'vant'
+Vue.use(Loading)
 Vue.config.productionTip = false
 
 new Vue({
