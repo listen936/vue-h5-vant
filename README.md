@@ -5,11 +5,11 @@
 - [x] vue-cli4脚手架
 - [x] vant按需引入
 - [x] 移动端rem适配
-- [x]  axios拦截封装
-- [x]  请求时的加载动画
-- [x]  vue-router配置
-- [ ]  登录权限校验
-- [ ]  多环境变量配置
+- [x] axios拦截封装
+- [x] 请求时的加载动画
+- [x] vue-router配置
+- [x] 登录权限校验
+- [x]  多环境变量配置
 - [ ]  vue.config.js配置
 - [ ]  toast组件封装
 - [ ]  dialog组件封装
