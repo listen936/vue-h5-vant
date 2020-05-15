@@ -5,7 +5,7 @@ import store from './store'
 
 import './assets/css/reset.css'
 import './utils/plugins'
-
+import './router/permission'
 import Loading from './components/loading'
 Vue.prototype.$loading = Loading
 
