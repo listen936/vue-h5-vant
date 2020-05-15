@@ -4,6 +4,7 @@
     <h1>rem适配</h1>
     <van-button type="default">默认按钮</van-button>
     <van-button color="#7232dd">单色按钮</van-button>
+    <router-link to="about">about</router-link>
   </div>
 </template>
 
