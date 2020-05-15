@@ -7,8 +7,7 @@
 - [x] 移动端rem适配
 - [x]  axios拦截封装
 - [x]  请求时的加载动画
-- [ ]  util工具类函数封装
-- [ ]  vue-router配置
+- [x]  vue-router配置
 - [ ]  登录权限校验
 - [ ]  多环境变量配置
 - [ ]  vue.config.js配置
@@ -23,3 +22,4 @@
 ### tips
 
 1、postcss-px2rem需要安装到生成环境，不然vant无法适配
+
