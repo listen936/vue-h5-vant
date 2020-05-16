@@ -14,9 +14,9 @@
 - [ ]  toast组件封装
 - [ ]  dialog组件封装
 - [x]  跨域代理设置
-- [ ]  webpack打包可视化分析
+- [x]  webpack打包可视化分析
 - [ ]  CDN资源优化
-- [ ]  gzip打包优化
+- [x]  gzip打包优化
 - [ ]  首页添加骨架屏
 
 ### tips

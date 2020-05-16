@@ -1,4 +1,5 @@
 const path = require('path')
+// eslint-disable-next-line no-unused-vars
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 
 function resolve (dir) {
