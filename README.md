@@ -29,3 +29,5 @@
 > 相对路径的 publicPath 有一些使用上的限制。在以下情况下，应当避免使用相对 publicPath:
 1、 当使用基于 HTML5 history.pushState 的路由时；
 2、 当使用 pages 选项构建多页面应用时。
+
+

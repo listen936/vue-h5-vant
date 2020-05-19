@@ -11,7 +11,7 @@
 <script>
 // @ is an alias to /src
 import { Button } from 'vant'
-import { getWeather } from '../api/index'
+import { getIP } from '../api/index'
 export default {
   name: 'Home',
   components: {
@@ -19,7 +19,7 @@ export default {
   },
   data () {
     return {
-      weather: {}
+      ip: {}
     }
   },
   mounted () {
@@ -27,9 +27,30 @@ export default {
   },
   methods: {
     getData () {
-      getWeather().then(res => {
+      getIP().then(res => {
         console.log('res', res)
-        this.weather = res
+        this.ip = res
+        this.$toast({
+          msg: '获取数据成功',
+          type: 'fail',
+          duration: 2000
+        })
+        this.$dialog({
+          title: '流程结束',
+          text: '您未开启下节点处理，确定后审批流程结束，不需要下节点处理人操作！',
+          type: 'input',
+          placeholder: '请输入内容文本...',
+          length: 10,
+          showCancelBtn: true,
+          showConfirmBtn: true,
+          confirmText: '确认',
+          confirm (e) {
+            console.log(e)
+          },
+          cancel (e) {
+            console.log('cancel', e)
+          }
+        })
       })
     }
   }
