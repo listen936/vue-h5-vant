@@ -11,8 +11,8 @@
 - [x] 登录权限校验
 - [x]  多环境变量配置
 - [x]  vue.config.js配置
-- [ ]  toast组件封装
-- [ ]  dialog组件封装
+- [x]  toast组件封装
+- [x]  dialog组件封装
 - [x]  跨域代理设置
 - [x]  webpack打包可视化分析
 - [ ]  CDN资源优化
