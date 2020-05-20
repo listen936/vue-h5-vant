@@ -36,7 +36,7 @@
 ### 横屏适配
 
 因为某些业务需求，需要在竖屏的情况下，将内容横屏展示
-
+![图示](src/assets/imgs/step.png)
 
 ```js
 var width = document.documentElement.clientWidth
