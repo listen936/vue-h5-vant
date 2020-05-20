@@ -2,9 +2,11 @@
 <template>
   <div class="home">
     <h1>rem适配</h1>
-    <van-button type="default">默认按钮</van-button>
-    <van-button color="#7232dd">单色按钮</van-button>
+    <router-link to="landscape">
+      <van-button type="default">横屏demo</van-button>
+    </router-link>
     <router-link to="about">about</router-link>
+    <van-button color="#7232dd">单色按钮</van-button>
   </div>
 </template>
 
@@ -35,22 +37,22 @@ export default {
           type: 'fail',
           duration: 2000
         })
-        this.$dialog({
-          title: '流程结束',
-          text: '您未开启下节点处理，确定后审批流程结束，不需要下节点处理人操作！',
-          type: 'input',
-          placeholder: '请输入内容文本...',
-          length: 10,
-          showCancelBtn: true,
-          showConfirmBtn: true,
-          confirmText: '确认',
-          confirm (e) {
-            console.log(e)
-          },
-          cancel (e) {
-            console.log('cancel', e)
-          }
-        })
+        // this.$dialog({
+        //   title: '流程结束',
+        //   text: '您未开启下节点处理，确定后审批流程结束，不需要下节点处理人操作！',
+        //   type: 'input',
+        //   placeholder: '请输入内容文本...',
+        //   length: 10,
+        //   showCancelBtn: true,
+        //   showConfirmBtn: true,
+        //   confirmText: '确认',
+        //   confirm (e) {
+        //     console.log(e)
+        //   },
+        //   cancel (e) {
+        //     console.log('cancel', e)
+        //   }
+        // })
       })
     }
   }

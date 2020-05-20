@@ -18,6 +18,8 @@
 - [ ]  CDN资源优化
 - [x]  gzip打包优化
 - [ ]  首页添加骨架屏
+- [x]  横屏适配
+
 
 ### tips
 
@@ -31,3 +33,30 @@
 2、 当使用 pages 选项构建多页面应用时。
 
 
+### 横屏适配
+
+因为某些业务需求，需要在竖屏的情况下，将内容横屏展示
+
+
+```js
+var width = document.documentElement.clientWidth
+      var height = document.documentElement.clientHeight
+      var wrapper = document.getElementById('wrap')
+      var style = ''
+      if (width >= height) { // 竖屏
+        style += 'width:100%'
+        style += 'height:100%;'
+        style += '-webkit-transform: rotate(0); transform: rotate(0);'
+        style += '-webkit-transform-origin: 0 0;'
+        style += 'transform-origin: 0 0;'
+      } else { // 横屏
+        style += 'width:' + height + 'px;'// 注意旋转后的宽高切换
+        style += 'height:' + width + 'px;'
+        style += '-webkit-transform: rotate(90deg); transform: rotate(90deg);'
+        // 注意旋转中点的处理
+        style += '-webkit-transform-origin: ' + width / 2 + 'px ' + width / 2 + 'px;'
+        style += 'transform-origin: ' + width / 2 + 'px ' + width / 2 + 'px;'
+      }
+      wrapper.style.cssText = style
+
+```

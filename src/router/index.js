@@ -26,6 +26,12 @@ const routes = [
     name: 'Login',
     component: () => import('../views/login.vue'),
     meta: { title: '登陆' }
+  },
+  {
+    path: '/landscape',
+    name: 'Landscape',
+    component: () => import('../views/landscape.vue'),
+    meta: { title: '横屏展示' }
   }
 ]
 
