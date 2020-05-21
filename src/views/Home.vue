@@ -1,5 +1,6 @@
 
 <template>
+
   <div class="home">
     <h1>rem适配</h1>
     <router-link to="landscape">
@@ -7,7 +8,10 @@
     </router-link>
     <router-link to="about">about</router-link>
     <van-button color="#7232dd">单色按钮</van-button>
+    <img class="img" src="../assets/imgs/timg.jpeg">
+
   </div>
+
 </template>
 
 <script>
@@ -21,11 +25,11 @@ export default {
   },
   data () {
     return {
-      ip: {}
+      ip: {},
+      loading: true
     }
   },
   mounted () {
-    this.getData()
   },
   methods: {
     getData () {
@@ -61,5 +65,9 @@ export default {
 <style lang="scss" scoped>
 h1 {
   font-size: 26px;
+}
+.img {
+  width: 100px;
+  height: 100px;
 }
 </style>

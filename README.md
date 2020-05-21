@@ -15,9 +15,8 @@
 - [x]  dialog组件封装
 - [x]  跨域代理设置
 - [x]  webpack打包可视化分析
-- [ ]  CDN资源优化
 - [x]  gzip打包优化
-- [ ]  首页添加骨架屏
+- [x]  首页添加骨架屏 vue-skeleton-webpack-plugin
 - [x]  横屏适配
 
 
@@ -32,6 +31,8 @@
 1、 当使用基于 HTML5 history.pushState 的路由时；
 2、 当使用 pages 选项构建多页面应用时。
 
+
+3、骨架屏尝试了一下page-skeleton-webpack-plugin，结果坑太多，不想去研究了，大概看了一下vue-skeleton-webpack-plugin，了解如何使用
 
 ### 横屏适配
 

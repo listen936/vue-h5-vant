@@ -1,8 +1,8 @@
+/* eslint-disable no-undef */
 const path = require('path')
 // eslint-disable-next-line no-unused-vars
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-
 function resolve (dir) {
   return path.join(__dirname, dir)
 }

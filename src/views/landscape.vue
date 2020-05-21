@@ -1,11 +1,17 @@
 <template>
     <div class="wrap" id="wrap" >
         <img class="img" src="../assets/imgs/timg.jpeg">
+        <div class="btn">    <van-button color="#7232dd">单色按钮</van-button>
+</div>
     </div>
 </template>
 <script>
+import { Button } from 'vant'
 export default {
   name: 'Landscape',
+  components: {
+    [Button.name]: Button
+  },
   data () {
     return {
 
@@ -44,9 +50,15 @@ export default {
 .wrap {
     width:100%;
     height: 100%;
+    position: relative;
 }
 .img {
     width: 100%;
     height: 100%;
+}
+.btn {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
 }
 </style>
